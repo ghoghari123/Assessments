@@ -1,0 +1,138 @@
+:root {
+  --primary: #0d6efd;
+  --dark: #0b1f33;
+  --light: #f8fbff;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #1f2937;
+  padding-top: 76px;
+}
+
+.glass-nav {
+  background: rgba(11, 31, 51, 0.85);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.navbar-brand {
+  letter-spacing: 0.5px;
+}
+
+.nav-link {
+  color: rgba(255,255,255,0.8) !important;
+  font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #fff !important;
+}
+
+.hero-section,
+.page-hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-section {
+  background-image: url('https://images.unsplash.com/photo-1503220317375-aaad61436b1b?auto=format&fit=crop&w=1600&q=80');
+}
+
+.about-hero {
+  min-height: 70vh;
+  background-image: url('https://images.unsplash.com/photo-1500835556837-99ac94a94552?auto=format&fit=crop&w=1600&q=80');
+}
+
+.destinations-hero {
+  min-height: 70vh;
+  background-image: url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1600&q=80');
+}
+
+.packages-hero {
+  min-height: 70vh;
+  background-image: url('https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=1600&q=80');
+}
+
+.contact-hero {
+  min-height: 70vh;
+  background-image: url('https://images.unsplash.com/photo-1522093007474-d86e9bf7ba3b?auto=format&fit=crop&w=1600&q=80');
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(3,16,31,0.85), rgba(3,16,31,0.45));
+}
+
+.hero-content,
+.page-hero .container {
+  z-index: 2;
+}
+
+.search-card {
+  border-radius: 24px;
+}
+
+.destination-card,
+.package-card,
+.value-card,
+.feature-box,
+.testimonial-card {
+  transition: all 0.3s ease;
+}
+
+.destination-card:hover,
+.package-card:hover,
+.value-card:hover,
+.feature-box:hover,
+.testimonial-card:hover {
+  transform: translateY(-6px);
+}
+
+.destination-card img,
+.package-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.footer-section {
+  background: #08131f;
+}
+
+.footer-section a {
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #fff;
+}
+
+.form-control,
+.form-select {
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+}
+
+.btn {
+  border-radius: 12px;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  overflow: hidden;
+}
