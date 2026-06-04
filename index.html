@@ -1,241 +1,712 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TravelVista | Explore the World</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrainGo | Luxury Train Travel</title>
+
+    <!-- <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css"> -->
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav">
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="header">
+
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">TravelVista</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse" id="mainNav">
-                <ul class="navbar-nav ms-auto gap-lg-2">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
-                    <li class="nav-item"><a class="nav-link" href="packages.html">Packages</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <nav class="navbar">
+
+                <div class="logo">
+                    <i class="fa-solid fa-train"></i>
+                    <span>TrainGo</span>
+                </div>
+
+                <ul class="nav-links">
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="destinations.html">Destinations</a></li>
+
+                    <li><a href="packages.html">Packages</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
                 </ul>
-            </div>
-        </div>
-    </nav>
 
-    <header class="hero-section">
-        <div class="hero-overlay"></div>
-        <div class="container position-relative hero-content">
-            <div class="row align-items-center min-vh-100 py-5">
-                <div class="col-lg-7 text-white">
-                    <span class="badge bg-warning text-dark mb-3 px-3 py-2">Best Travel Experience</span>
-                    <h1 class="display-3 fw-bold mb-3">Discover Beautiful Places Around the World</h1>
-                    <p class="lead mb-4">
-                        Plan your dream trip with TravelVista. Explore stunning destinations, affordable packages, and
-                        unforgettable adventures.
-                    </p>
-                    <div class="d-flex flex-wrap gap-3">
-                        <a href="destinations.html" class="btn btn-warning btn-lg fw-semibold">Explore Destinations</a>
-                        <a href="packages.html" class="btn btn-outline-light btn-lg">View Packages</a>
-                    </div>
+                <div class="nav-actions">
+
+                    <a href="#" class="profile">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+
+                    <a href="login-register.html" class="register-btn">
+                        Register
+                    </a>
+
                 </div>
 
-                <div class="col-lg-5 mt-5 mt-lg-0">
-                    <div class="search-card p-4 rounded-4 shadow-lg bg-white">
-                        <h5 class="mb-3 fw-bold">Find Your Trip</h5>
-                        <form class="row g-3">
-                            <div class="col-12">
-                                <input type="text" class="form-control form-control-lg"
-                                    placeholder="Search destination">
-                            </div>
-                            <div class="col-6">
-                                <input type="date" class="form-control">
-                            </div>
-                            <div class="col-6">
-                                <select class="form-select">
-                                    <option>Guests</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3+</option>
-                                </select>
-                            </div>
-                            <div class="col-12">
-                                <button type="button" class="btn btn-primary w-100 btn-lg">Search Now</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+            </nav>
+
         </div>
+
     </header>
 
-    <section class="py-5 bg-light">
-        <div class="container py-4">
-            <div class="text-center mb-5">
-                <span class="text-primary fw-semibold">Top Destinations</span>
-                <h2 class="fw-bold mt-2">Popular Travel Spots</h2>
-            </div>
+    <!-- ================= HERO ================= -->
 
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card destination-card h-100 border-0 shadow-sm">
-                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80"
-                            class="card-img-top" alt="Maldives">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Maldives</h5>
-                            <p class="card-text text-muted">Enjoy crystal clear water and luxury beach resorts.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card destination-card h-100 border-0 shadow-sm">
-                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80"
-                            class="card-img-top" alt="Paris">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Paris</h5>
-                            <p class="card-text text-muted">Experience romance, art, and world-famous landmarks.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card destination-card h-100 border-0 shadow-sm">
-                        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=900&q=80"
-                            class="card-img-top" alt="Switzerland">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Switzerland</h5>
-                            <p class="card-text text-muted">Explore snow mountains, lakes, and scenic beauty.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section class="hero">
 
-    <section class="py-5">
-        <div class="container py-4">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
-                        class="img-fluid rounded-4 shadow" alt="Travel Guide">
-                </div>
-                <div class="col-lg-6">
-                    <span class="text-primary fw-semibold">Why Choose Us</span>
-                    <h2 class="fw-bold mt-2 mb-3">We make travel planning easy and memorable</h2>
-                    <p class="text-muted">
-                        From budget trips to luxury holidays, our travel packages are designed for comfort, safety, and
-                        unforgettable moments.
-                    </p>
+        <div class="hero-overlay"></div>
 
-                    <div class="row g-3 mt-4">
-                        <div class="col-md-6">
-                            <div class="feature-box p-3 rounded-4 shadow-sm">
-                                <i class="bi bi-globe-americas fs-3 text-primary"></i>
-                                <h6 class="fw-bold mt-2">Worldwide Destinations</h6>
-                                <p class="text-muted mb-0">Choose from the best places on Earth.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="feature-box p-3 rounded-4 shadow-sm">
-                                <i class="bi bi-currency-dollar fs-3 text-primary"></i>
-                                <h6 class="fw-bold mt-2">Affordable Packages</h6>
-                                <p class="text-muted mb-0">Great trips at student-friendly prices.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="feature-box p-3 rounded-4 shadow-sm">
-                                <i class="bi bi-clock-history fs-3 text-primary"></i>
-                                <h6 class="fw-bold mt-2">24/7 Support</h6>
-                                <p class="text-muted mb-0">We help you anytime during the trip.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="feature-box p-3 rounded-4 shadow-sm">
-                                <i class="bi bi-shield-check fs-3 text-primary"></i>
-                                <h6 class="fw-bold mt-2">Trusted Service</h6>
-                                <p class="text-muted mb-0">Safe and reliable travel planning.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-5 bg-light">
-        <div class="container py-4">
-            <div class="text-center mb-5">
-                <span class="text-primary fw-semibold">Testimonials</span>
-                <h2 class="fw-bold mt-2">What Travelers Say</h2>
-            </div>
-
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="testimonial-card p-4 bg-white rounded-4 shadow-sm h-100">
-                        <p class="mb-3">“Amazing service and beautiful package planning. My trip was smooth and
-                            unforgettable.”</p>
-                        <h6 class="fw-bold mb-0">Priya Sharma</h6>
-                        <small class="text-muted">College Student</small>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="testimonial-card p-4 bg-white rounded-4 shadow-sm h-100">
-                        <p class="mb-3">“The website is clean, easy to use, and the travel deals are really attractive.”
-                        </p>
-                        <h6 class="fw-bold mb-0">Rahul Patel</h6>
-                        <small class="text-muted">Traveler</small>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="testimonial-card p-4 bg-white rounded-4 shadow-sm h-100">
-                        <p class="mb-3">“Professional design and very useful for trip planning. Loved the experience!”
-                        </p>
-                        <h6 class="fw-bold mb-0">Neha Gupta</h6>
-                        <small class="text-muted">Explorer</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer-section text-white py-5">
         <div class="container">
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <h4 class="fw-bold">TravelVista</h4>
-                    <p class="text-white-50">Your trusted travel partner for amazing journeys, memories, and adventures.
-                    </p>
+
+            <div class="hero-content">
+
+                <span class="hero-tag">
+                    Luxury Train Experience
+                </span>
+
+                <h1>
+                    Travel Across India
+                    With Comfort,
+                    Style & Elegance
+                </h1>
+
+                <p>
+                    Explore breathtaking destinations,
+                    premium cabins, luxury hospitality
+                    and unforgettable train journeys.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="packages.html" class="primary-btn">
+                        Explore Packages
+                    </a>
+
+                    <a href="destinations.html" class="secondary-btn">
+                        View Destinations
+                    </a>
+
                 </div>
-                <div class="col-md-4">
-                    <h5 class="fw-semibold">Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="destinations.html">Destinations</a></li>
-                        <li><a href="packages.html">Packages</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5 class="fw-semibold">Contact</h5>
-                    <p class="mb-1 text-white-50">Ahmedabad, India</p>
-                    <p class="mb-1 text-white-50">info@travelvista.com</p>
-                    <p class="text-white-50">+91 98765 43210</p>
-                </div>
+
             </div>
-            <hr class="border-white border-opacity-25">
-            <p class="text-center mb-0 text-white-50">© 2026 TravelVista. All rights reserved.</p>
+
         </div>
+
+    </section>
+
+    <!-- ================= SEARCH ================= -->
+
+    <section class="booking-search">
+
+        <div class="container">
+
+            <div class="search-card">
+
+                <h2>
+                    Search Your Journey
+                </h2>
+
+                <form>
+
+                    <div class="form-group">
+                        <label>From</label>
+                        <input type="text" placeholder="Ahmedabad">
+                    </div>
+
+                    <div class="form-group">
+                        <label>To</label>
+                        <input type="text" placeholder="Goa">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Date</label>
+                        <input type="date">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Passengers</label>
+
+                        <select>
+
+                            <option>1 Passenger</option>
+                            <option>2 Passenger</option>
+                            <option>3 Passenger</option>
+                            <option>4 Passenger</option>
+
+                        </select>
+
+                    </div>
+
+                    <button type="submit">
+                        Search Now
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= DESTINATIONS ================= -->
+
+    <section class="destinations">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Top Places</span>
+
+                <h2>
+                    Popular Destinations
+                </h2>
+
+            </div>
+
+            <div class="destination-grid">
+
+                <div class="destination-card">
+
+                    <img src="images/destination1.jpg" alt="Goa">
+
+                    <div class="destination-content">
+
+                        <h3>Goa</h3>
+
+                        <p>
+                            Beach Paradise
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="destination-card">
+
+                    <img src="images/destination2.jpg" alt="Jaipur">
+
+                    <div class="destination-content">
+
+                        <h3>Jaipur</h3>
+
+                        <p>
+                            Pink City
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="destination-card">
+
+                    <img src="images/destination3.jpg" alt="Delhi">
+
+                    <div class="destination-content">
+
+                        <h3>Delhi</h3>
+
+                        <p>
+                            Capital City
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="destination-card">
+
+                    <img src="images/train1.jpg" alt="Mumbai">
+
+                    <div class="destination-content">
+
+                        <h3>Mumbai</h3>
+
+                        <p>
+                            City Of Dreams
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="destination-card">
+
+                    <img src="images/train2.jpg" alt="Kolkata">
+
+                    <div class="destination-content">
+
+                        <h3>Kolkata</h3>
+
+                        <p>
+                            Cultural Heritage
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="destination-card">
+
+                    <img src="images/train3.jpg" alt="Ahmedabad">
+
+                    <div class="destination-content">
+
+                        <h3>Ahmedabad</h3>
+
+                        <p>
+                            Heritage City
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PACKAGES ================= -->
+
+    <section class="packages">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Luxury Offers</span>
+
+                <h2>
+                    Premium Packages
+                </h2>
+
+            </div>
+
+            <div class="package-grid">
+
+                <div class="package-card">
+
+                    <h3>Silver Package</h3>
+
+                    <h1>₹4,999</h1>
+
+                    <ul>
+
+                        <li>Comfort Seat</li>
+
+                        <li>Meals Included</li>
+
+                        <li>WiFi Access</li>
+
+                    </ul>
+
+                    <a href="#">
+                        Book Now
+                    </a>
+
+                </div>
+
+                <div class="package-card featured">
+
+                    <h3>Gold Package</h3>
+
+                    <h1>₹9,999</h1>
+
+                    <ul>
+
+                        <li>Luxury Cabin</li>
+
+                        <li>Premium Meals</li>
+
+                        <li>Priority Boarding</li>
+
+                    </ul>
+
+                    <a href="#">
+                        Book Now
+                    </a>
+
+                </div>
+
+                <div class="package-card">
+
+                    <h3>Platinum Package</h3>
+
+                    <h1>₹14,999</h1>
+
+                    <ul>
+
+                        <li>VIP Cabin</li>
+
+                        <li>Unlimited Meals</li>
+
+                        <li>Personal Assistance</li>
+
+                    </ul>
+
+                    <a href="#">
+                        Book Now
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ================= WHY CHOOSE US ================= -->
+
+    <section class="why-choose-us">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Why TrainGo</span>
+
+                <h2>
+                    Why Choose Us
+                </h2>
+
+            </div>
+
+            <div class="features-grid">
+
+                <div class="feature-card">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    <h3>Safe Travel</h3>
+
+                    <p>
+                        Advanced safety systems and professional staff ensure a secure journey.
+                    </p>
+
+                </div>
+
+                <div class="feature-card">
+
+                    <i class="fa-solid fa-crown"></i>
+
+                    <h3>Luxury Experience</h3>
+
+                    <p>
+                        Premium cabins, world-class hospitality and unmatched comfort.
+                    </p>
+
+                </div>
+
+                <div class="feature-card">
+
+                    <i class="fa-solid fa-ticket"></i>
+
+                    <h3>Easy Booking</h3>
+
+                    <p>
+                        Book your train journey within minutes with our smart booking system.
+                    </p>
+
+                </div>
+
+                <div class="feature-card">
+
+                    <i class="fa-solid fa-headset"></i>
+
+                    <h3>24/7 Support</h3>
+
+                    <p>
+                        Dedicated customer support team available anytime.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= STATS ================= -->
+
+    <section class="stats">
+
+        <div class="container">
+
+            <div class="stats-grid">
+
+                <div class="stat-box">
+                    <h2>50K+</h2>
+                    <p>Happy Travelers</p>
+                </div>
+
+                <div class="stat-box">
+                    <h2>100+</h2>
+                    <p>Train Routes</p>
+                </div>
+
+                <div class="stat-box">
+                    <h2>25+</h2>
+                    <p>Awards Won</p>
+                </div>
+
+                <div class="stat-box">
+                    <h2>99%</h2>
+                    <p>Customer Satisfaction</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= TRAIN GALLERY ================= -->
+
+    <section class="gallery">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Moments</span>
+
+                <h2>
+                    Train Gallery
+                </h2>
+
+            </div>
+
+            <div class="gallery-grid">
+
+                <img src="images/train1.jpg" alt="">
+                <img src="images/train2.jpg" alt="">
+                <img src="images/train3.jpg" alt="">
+                <img src="images/destination1.jpg" alt="">
+                <img src="images/destination2.jpg" alt="">
+                <img src="images/destination3.jpg" alt="">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+
+    <section class="testimonials">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Reviews</span>
+
+                <h2>
+                    What Our Travelers Say
+                </h2>
+
+            </div>
+
+            <div class="testimonial-grid">
+
+                <div class="testimonial-card">
+
+                    <p>
+                        Amazing experience! Luxury cabins and great service.
+                    </p>
+
+                    <h4>Rahul Patel</h4>
+
+                </div>
+
+                <div class="testimonial-card">
+
+                    <p>
+                        Best train journey ever. Highly recommended.
+                    </p>
+
+                    <h4>Priya Sharma</h4>
+
+                </div>
+
+                <div class="testimonial-card">
+
+                    <p>
+                        Comfortable, safe and memorable travel experience.
+                    </p>
+
+                    <h4>Amit Verma</h4>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= NEWSLETTER ================= -->
+
+    <section class="newsletter">
+
+        <div class="container">
+
+            <div class="newsletter-content">
+
+                <h2>
+                    Subscribe To Our Newsletter
+                </h2>
+
+                <p>
+                    Get latest train travel offers and exclusive discounts.
+                </p>
+
+                <form>
+
+                    <input type="email" placeholder="Enter your email">
+
+                    <button type="submit">
+                        Subscribe
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-column">
+
+                    <h3>TrainGo</h3>
+
+                    <p>
+                        Premium train travel company delivering luxury journeys
+                        across India's most beautiful destinations.
+                    </p>
+
+                    <div class="social-links">
+
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h3>Quick Links</h3>
+
+                    <ul>
+
+                        <li><a href="index.html">Home</a></li>
+
+                        <li><a href="about.html">About</a></li>
+
+                        <li><a href="destinations.html">Destinations</a></li>
+
+                        <li><a href="packages.html">Packages</a></li>
+
+                        <li><a href="contact.html">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h3>Services</h3>
+
+                    <ul>
+
+                        <li><a href="#">Luxury Travel</a></li>
+
+                        <li><a href="#">Group Booking</a></li>
+
+                        <li><a href="#">Business Travel</a></li>
+
+                        <li><a href="#">VIP Packages</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h3>Contact</h3>
+
+                    <ul>
+
+                        <li>Ahmedabad, Gujarat</li>
+
+                        <li>+91 9876543210</li>
+
+                        <li>info@traingo.com</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2025 TrainGo. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/animations.js"></script>
+
 </body>
 
 </html>

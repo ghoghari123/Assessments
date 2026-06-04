@@ -1,88 +1,179 @@
-document.addEventListener("DOMContentLoaded", function () {
-  // Active nav based on current page
-  const currentPage = window.location.pathname.split("/").pop() || "index.html";
-  document.querySelectorAll(".nav-link").forEach(link => {
-    const linkPage = link.getAttribute("href");
-    if (linkPage === currentPage) {
-      link.classList.add("active");
-    } else {
-      link.classList.remove("active");
+/* =========================
+   STICKY HEADER
+========================= */
+
+const header = document.querySelector(".header");
+
+window.addEventListener("scroll", () => {
+
+    if(window.scrollY > 80){
+
+        header.classList.add("active");
+
+    }else{
+
+        header.classList.remove("active");
+
     }
-  });
 
-  // Destination search
-  const searchInput = document.getElementById("destinationSearch");
-  const items = document.querySelectorAll(".destination-item");
+});
 
-  if (searchInput && items.length > 0) {
-    searchInput.addEventListener("input", function () {
-      const value = this.value.toLowerCase().trim();
 
-      items.forEach(item => {
-        const name = item.getAttribute("data-name");
-        if (name.includes(value)) {
-          item.style.display = "block";
-        } else {
-          item.style.display = "none";
-        }
-      });
+/* =========================
+   SCROLL TO TOP BUTTON
+========================= */
+
+const scrollBtn = document.createElement("div");
+
+scrollBtn.classList.add("scroll-top");
+
+scrollBtn.innerHTML =
+'<i class="fa-solid fa-arrow-up"></i>';
+
+document.body.appendChild(scrollBtn);
+
+window.addEventListener("scroll", () => {
+
+    if(window.scrollY > 400){
+
+        scrollBtn.classList.add("show");
+
+    }else{
+
+        scrollBtn.classList.remove("show");
+
+    }
+
+});
+
+scrollBtn.addEventListener("click", () => {
+
+    window.scrollTo({
+
+        top:0,
+
+        behavior:"smooth"
+
     });
-  }
 
-  // Contact form validation
-  const form = document.getElementById("contactForm");
-  const successBox = document.getElementById("formSuccess");
+});
 
-  if (form) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
 
-      const name = document.getElementById("name");
-      const email = document.getElementById("email");
-      const subject = document.getElementById("subject");
-      const message = document.getElementById("message");
+/* =========================
+   ACTIVE NAV LINK
+========================= */
 
-      let valid = true;
+const currentPage =
+window.location.pathname.split("/").pop();
 
-      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const navLinks =
+document.querySelectorAll(".nav-links a");
 
-      if (!name.value.trim()) {
-        name.classList.add("is-invalid");
-        valid = false;
-      } else {
-        name.classList.remove("is-invalid");
-        name.classList.add("is-valid");
-      }
+navLinks.forEach(link => {
 
-      if (!emailPattern.test(email.value.trim())) {
-        email.classList.add("is-invalid");
-        valid = false;
-      } else {
-        email.classList.remove("is-invalid");
-        email.classList.add("is-valid");
-      }
+    const href =
+    link.getAttribute("href");
 
-      if (!subject.value.trim()) {
-        subject.classList.add("is-invalid");
-        valid = false;
-      } else {
-        subject.classList.remove("is-invalid");
-        subject.classList.add("is-valid");
-      }
+    if(href === currentPage){
 
-      if (!message.value.trim()) {
-        message.classList.add("is-invalid");
-        valid = false;
-      } else {
-        message.classList.remove("is-invalid");
-        message.classList.add("is-valid");
-      }
+        link.classList.add("active");
 
-      if (valid && successBox) {
-        successBox.classList.remove("d-none");
-        form.reset();
-        document.querySelectorAll(".is-valid").forEach(el => el.classList.remove("is-valid"));
-      }
+    }
+
+});
+
+
+/* =========================
+   BUTTON RIPPLE EFFECT
+========================= */
+
+const buttons =
+document.querySelectorAll(
+".primary-btn,.register-btn"
+);
+
+buttons.forEach(btn => {
+
+    btn.addEventListener("click", function(e){
+
+        const ripple =
+        document.createElement("span");
+
+        const rect =
+        this.getBoundingClientRect();
+
+        ripple.style.left =
+        e.clientX - rect.left + "px";
+
+        ripple.style.top =
+        e.clientY - rect.top + "px";
+
+        ripple.classList.add("ripple");
+
+        this.appendChild(ripple);
+
+        setTimeout(() => {
+
+            ripple.remove();
+
+        },600);
+
     });
-  }
+
+});
+
+
+/* =========================
+   PAGE LOADER EFFECT
+========================= */
+
+window.addEventListener("load", () => {
+
+    document.body.classList.add("loaded");
+
+});
+
+
+/* =========================
+   SMOOTH SECTION REVEAL
+========================= */
+
+const revealElements =
+document.querySelectorAll(
+"section"
+);
+
+const revealObserver =
+new IntersectionObserver(
+
+(entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add(
+"show-section"
+);
+
+}
+
+});
+
+},
+
+{
+threshold:0.15
+}
+
+);
+
+revealElements.forEach(section=>{
+
+section.classList.add(
+"hidden-section"
+);
+
+revealObserver.observe(section);
+
 });

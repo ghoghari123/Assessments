@@ -1,0 +1,921 @@
+/* =========================
+   PAGE HERO
+========================= */
+
+.page-hero,
+.about-hero,
+.destination-hero,
+.package-hero,
+.contact-hero {
+
+    min-height: 70vh;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+.about-hero {
+    background: url('../images/train1.jpg');
+}
+
+.destination-hero {
+    background: url('../images/destination1.jpg');
+}
+
+.package-hero {
+    background: url('../images/train2.jpg');
+}
+
+.contact-hero {
+    background: url('../images/train3.jpg');
+}
+
+.overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, .6);
+
+}
+
+.page-hero-content,
+.about-hero-content,
+.destination-hero-content,
+.package-hero-content,
+.contact-hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    color: #fff;
+
+    max-width: 900px;
+
+}
+
+.page-hero-content h1,
+.about-hero-content h1,
+.destination-hero-content h1,
+.package-hero-content h1,
+.contact-hero-content h1 {
+
+    font-size: 70px;
+
+    margin: 20px 0;
+
+}
+
+.page-hero-content span,
+.about-hero-content span,
+.destination-hero-content span,
+.package-hero-content span,
+.contact-hero-content span {
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+}
+
+.page-hero-content p,
+.about-hero-content p,
+.destination-hero-content p,
+.package-hero-content p,
+.contact-hero-content p {
+
+    font-size: 18px;
+
+}
+
+
+/* =========================
+   STORY SECTION
+========================= */
+
+.story-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+
+}
+
+.story-image img {
+
+    border-radius: 25px;
+
+    box-shadow: var(--shadow);
+
+}
+
+.story-content span {
+
+    color: var(--primary);
+
+    font-weight: 600;
+
+}
+
+.story-content h2 {
+
+    font-size: 50px;
+
+    margin: 20px 0;
+
+}
+
+.story-content p {
+
+    color: var(--gray);
+
+    margin-bottom: 20px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================
+   CEO SECTION
+========================= */
+
+.ceo-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        400px 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+
+}
+
+.ceo-image img {
+
+    border-radius: 25px;
+
+    box-shadow: var(--shadow);
+
+}
+
+.ceo-content span {
+
+    color: var(--primary);
+
+    font-weight: 600;
+
+}
+
+.ceo-content h2 {
+
+    font-size: 48px;
+
+    margin: 20px 0;
+
+}
+
+.ceo-content p {
+
+    color: var(--gray);
+
+    margin-bottom: 20px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================
+   MISSION VISION
+========================= */
+
+.mv-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 30px;
+
+}
+
+.mv-card {
+
+    background: #fff;
+
+    padding: 45px;
+
+    border-radius: 25px;
+
+    box-shadow: var(--shadow);
+
+    text-align: center;
+
+}
+
+.mv-card i {
+
+    font-size: 50px;
+
+    color: var(--primary);
+
+    margin-bottom: 20px;
+
+}
+
+.mv-card h3 {
+
+    margin-bottom: 15px;
+
+}
+
+
+/* =========================
+   DESTINATION SEARCH
+========================= */
+
+.destination-search {
+
+    margin-top: -70px;
+
+    position: relative;
+
+    z-index: 10;
+
+}
+
+.destination-search .search-card {
+
+    background: #fff;
+
+    padding: 50px;
+
+    border-radius: 25px;
+
+    box-shadow: var(--shadow);
+
+}
+
+.destination-search form {
+
+    display: grid;
+
+    grid-template-columns:
+        2fr 1fr auto;
+
+    gap: 20px;
+
+}
+
+.destination-search input,
+.destination-search select {
+
+    height: 60px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 12px;
+
+    padding: 0 15px;
+
+}
+
+.destination-search button {
+
+    padding: 0 30px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: var(--primary);
+
+    color: #fff;
+
+    cursor: pointer;
+
+}
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+.contact-wrapper {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+
+}
+
+.contact-left span {
+
+    color: var(--primary);
+
+    font-weight: 600;
+
+}
+
+.contact-left h2 {
+
+    font-size: 50px;
+
+    margin: 20px 0;
+
+}
+
+.contact-left p {
+
+    color: var(--gray);
+
+    margin-bottom: 25px;
+
+}
+
+.contact-left ul li {
+
+    margin-bottom: 15px;
+
+}
+
+.contact-left ul li i {
+
+    color: var(--primary);
+
+    margin-right: 10px;
+
+}
+
+.contact-form {
+
+    background: #fff;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    box-shadow: var(--shadow);
+
+}
+
+.form-row {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+    margin-bottom: 20px;
+
+}
+
+.contact-form input,
+.contact-form textarea {
+
+    width: 100%;
+
+    border: 1px solid #ddd;
+
+    border-radius: 12px;
+
+    padding: 15px;
+
+    outline: none;
+
+}
+
+.contact-form textarea {
+
+    height: 180px;
+
+    resize: none;
+
+    margin-bottom: 20px;
+
+}
+
+.contact-form button {
+
+    border: none;
+
+    padding: 15px 35px;
+
+    background: var(--primary);
+
+    color: #fff;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+}
+
+
+/* =========================
+   OFFICE SECTION
+========================= */
+
+.office-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 30px;
+
+}
+
+.office-card {
+
+    background: #fff;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: var(--shadow);
+
+}
+
+
+/* =========================
+   BENEFITS
+========================= */
+
+.benefits-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 30px;
+
+}
+
+.benefit-card {
+
+    background: #fff;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: var(--shadow);
+
+}
+
+.benefit-card i {
+
+    font-size: 45px;
+
+    color: var(--primary);
+
+    margin-bottom: 20px;
+
+}
+
+
+/* =========================
+   GUIDE SECTION
+========================= */
+
+.guide-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 30px;
+
+}
+
+.guide-card {
+
+    background: #fff;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: var(--shadow);
+
+}
+
+.guide-card i {
+
+    font-size: 50px;
+
+    color: var(--primary);
+
+    margin-bottom: 20px;
+
+}
+
+
+/* =========================
+   TEAM SECTION
+========================= */
+
+.team-section .team-card {
+
+    transition: .4s;
+
+}
+
+.team-section .team-card:hover {
+
+    transform: translateY(-10px);
+
+}
+
+
+/* =========================
+   SCENIC SECTION
+========================= */
+
+.scenic-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+
+}
+
+.scenic-image img {
+
+    border-radius: 25px;
+
+    box-shadow: var(--shadow);
+
+}
+
+.scenic-content span {
+
+    color: var(--primary);
+
+}
+
+.scenic-content h2 {
+
+    font-size: 50px;
+
+    margin: 20px 0;
+
+}
+
+.scenic-content p {
+
+    color: var(--gray);
+
+    margin-bottom: 25px;
+
+}
+
+/* =========================
+   PACKAGE TABLE
+========================= */
+
+.comparison-table {
+
+    overflow: auto;
+
+}
+
+.comparison-table table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background: #fff;
+
+    box-shadow: var(--shadow);
+
+}
+
+.comparison-table th {
+
+    background: var(--primary);
+
+    color: #fff;
+
+    padding: 20px;
+
+}
+
+.comparison-table td {
+
+    padding: 18px;
+
+    text-align: center;
+
+    border: 1px solid #eee;
+
+}
+
+
+/* =========================
+   LARGE PACKAGE CARD
+========================= */
+
+.large-card {
+
+    padding: 60px;
+
+}
+
+.package-header {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+
+}
+
+.package-header span {
+
+    color: var(--primary);
+
+    font-weight: 600;
+
+}
+
+.package-header h2 {
+
+    font-size: 45px;
+
+    margin: 15px 0;
+
+}
+
+.package-header h1 {
+
+    font-size: 65px;
+
+}
+
+.package-features {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+
+}
+
+.feature {
+
+    background: #f8fafc;
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+}
+
+.feature i {
+
+    color: green;
+
+    margin-right: 10px;
+
+}
+
+.package-btn {
+
+    text-align: center;
+
+    margin-top: 40px;
+
+}
+
+
+/* =========================
+   AWARDS
+========================= */
+
+.awards-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 30px;
+
+}
+
+.award-card {
+
+    background: #fff;
+
+    padding: 35px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    box-shadow: var(--shadow);
+
+}
+
+
+/* =========================
+   CATEGORY SECTION
+========================= */
+
+.category-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
+
+}
+
+.category-card {
+
+    background: #fff;
+
+    padding: 35px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    box-shadow: var(--shadow);
+
+}
+
+.category-card i {
+
+    font-size: 45px;
+
+    color: var(--primary);
+
+    margin-bottom: 20px;
+
+}
+
+
+/* =========================
+   MAP SECTION
+========================= */
+
+.map-container {
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow);
+
+}
+
+.map-container iframe {
+
+    width: 100%;
+
+    height: 500px;
+
+    border: none;
+
+}
+
+
+/* =========================
+   CTA ENHANCEMENT
+========================= */
+
+.cta-content {
+
+    max-width: 900px;
+
+    margin: auto;
+
+}
+
+.cta-content h2 {
+
+    font-size: 60px;
+
+}
+
+.cta-content p {
+
+    margin: 25px auto;
+
+    max-width: 700px;
+
+}
+
+
+/* =========================
+   GALLERY EFFECT
+========================= */
+
+.gallery-item {
+
+    position: relative;
+
+}
+
+.gallery-item::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(transparent,
+            rgba(0, 0, 0, .4));
+
+    opacity: 0;
+
+    transition: .4s;
+
+}
+
+.gallery-item:hover::before {
+
+    opacity: 1;
+
+}
+
+
+/* =========================
+   FAQ IMPROVED
+========================= */
+
+.faq-item {
+
+    transition: .4s;
+
+}
+
+.faq-item:hover {
+
+    transform: translateY(-5px);
+
+}
+
+
+/* =========================
+   PAGE SPACING
+========================= */
+
+.about-hero,
+.destination-hero,
+.package-hero,
+.contact-hero {
+
+    margin-top: 90px;
+
+}

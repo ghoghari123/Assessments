@@ -1,128 +1,873 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | TravelVista</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrainGo | Luxury Train Travel</title>
+
+    <!-- <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css"> -->
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">TravelVista</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto gap-lg-2">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
-          <li class="nav-item"><a class="nav-link" href="packages.html">Packages</a></li>
-          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <!-- ================= NAVBAR ================= -->
 
-  <section class="page-hero contact-hero text-white">
-    <div class="hero-overlay"></div>
-    <div class="container position-relative py-5">
-      <div class="py-5 my-5">
-        <h1 class="display-4 fw-bold">Contact Us</h1>
-        <p class="lead">Get in touch for bookings, questions, and custom travel plans.</p>
-      </div>
-    </div>
-  </section>
+    <header class="header">
 
-  <section class="py-5">
-    <div class="container py-4">
-      <div class="row g-5">
-        <div class="col-lg-5">
-          <h2 class="fw-bold mb-3">Reach out to our team</h2>
-          <p class="text-muted mb-4">We are here to help you plan your dream trip.</p>
+        <div class="container">
 
-          <div class="contact-info d-flex align-items-start gap-3 mb-3">
-            <i class="bi bi-geo-alt-fill fs-4 text-primary"></i>
-            <div>
-              <h6 class="fw-bold mb-1">Address</h6>
-              <p class="text-muted mb-0">Ahmedabad, Gujarat, India</p>
-            </div>
-          </div>
+            <nav class="navbar">
 
-          <div class="contact-info d-flex align-items-start gap-3 mb-3">
-            <i class="bi bi-envelope-fill fs-4 text-primary"></i>
-            <div>
-              <h6 class="fw-bold mb-1">Email</h6>
-              <p class="text-muted mb-0">info@travelvista.com</p>
-            </div>
-          </div>
+                <div class="logo">
+                    <i class="fa-solid fa-train"></i>
+                    <span>TrainGo</span>
+                </div>
 
-          <div class="contact-info d-flex align-items-start gap-3">
-            <i class="bi bi-telephone-fill fs-4 text-primary"></i>
-            <div>
-              <h6 class="fw-bold mb-1">Phone</h6>
-              <p class="text-muted mb-0">+91 98765 43210</p>
-            </div>
-          </div>
+                <ul class="nav-links">
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="destinations.html">Destinations</a></li>
+
+                    <li><a href="packages.html">Packages</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+                <div class="nav-actions">
+
+                    <a href="#" class="profile">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+
+                    <a href="login-register.html" class="register-btn">
+                        Register
+                    </a>
+
+                </div>
+
+            </nav>
+
         </div>
 
-        <div class="col-lg-7">
-          <div class="card border-0 shadow-lg rounded-4 p-4">
-            <h4 class="fw-bold mb-4">Send a Message</h4>
-            <form id="contactForm" novalidate>
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <input type="text" class="form-control form-control-lg" id="name" placeholder="Your Name">
-                  <div class="invalid-feedback">Please enter your name.</div>
-                </div>
-                <div class="col-md-6">
-                  <input type="email" class="form-control form-control-lg" id="email" placeholder="Your Email">
-                  <div class="invalid-feedback">Please enter a valid email.</div>
-                </div>
-                <div class="col-12">
-                  <input type="text" class="form-control form-control-lg" id="subject" placeholder="Subject">
-                  <div class="invalid-feedback">Please enter a subject.</div>
-                </div>
-                <div class="col-12">
-                  <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
-                  <div class="invalid-feedback">Please write your message.</div>
-                </div>
-                <div class="col-12">
-                  <button type="submit" class="btn btn-primary btn-lg px-4">Send Message</button>
-                </div>
-              </div>
-            </form>
-            <div id="formSuccess" class="alert alert-success mt-4 d-none">
-              Message sent successfully!
-            </div>
-          </div>
+    </header>
+
+  <!-- ================= HERO ================= -->
+
+  <section class="contact-hero">
+
+    <div class="overlay"></div>
+
+    <div class="container">
+
+      <div class="contact-hero-content">
+
+        <span>
+          Get In Touch
+        </span>
+
+        <h1>
+
+          We'd Love To Hear
+          From You
+
+        </h1>
+
+        <p>
+
+          Have questions about destinations,
+          packages or bookings? Our team is
+          ready to assist you.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= CONTACT INFO ================= -->
+
+  <section class="contact-info">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <span>
+          Contact Details
+        </span>
+
+        <h2>
+          Reach Us Anytime
+        </h2>
+
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-card">
+
+          <i class="fa-solid fa-location-dot"></i>
+
+          <h3>
+            Office Address
+          </h3>
+
+          <p>
+            Ahmedabad, Gujarat, India
+          </p>
+
         </div>
+
+        <div class="contact-card">
+
+          <i class="fa-solid fa-phone"></i>
+
+          <h3>
+            Phone Number
+          </h3>
+
+          <p>
+            +91 9876543210
+          </p>
+
+        </div>
+
+        <div class="contact-card">
+
+          <i class="fa-solid fa-envelope"></i>
+
+          <h3>
+            Email Address
+          </h3>
+
+          <p>
+            info@traingo.com
+          </p>
+
+        </div>
+
+        <div class="contact-card">
+
+          <i class="fa-solid fa-clock"></i>
+
+          <h3>
+            Working Hours
+          </h3>
+
+          <p>
+            Mon - Sun : 24/7 Support
+          </p>
+
+        </div>
+
       </div>
+
     </div>
+
   </section>
 
-  <section class="py-5 bg-light">
+  <!-- ================= CONTACT FORM ================= -->
+
+  <section class="contact-form-section">
+
     <div class="container">
-      <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow">
-        <iframe
-          src="https://www.google.com/maps?q=Ahmedabad&output=embed"
-          allowfullscreen
-          loading="lazy"></iframe>
+
+      <div class="contact-wrapper">
+
+        <div class="contact-left">
+
+          <span>
+            Send Message
+          </span>
+
+          <h2>
+            Let's Start A Conversation
+          </h2>
+
+          <p>
+
+            Fill out the form and our team
+            will contact you as soon as possible.
+
+          </p>
+
+          <ul>
+
+            <li>
+              <i class="fa-solid fa-check"></i>
+              Quick Response
+            </li>
+
+            <li>
+              <i class="fa-solid fa-check"></i>
+              Expert Assistance
+            </li>
+
+            <li>
+              <i class="fa-solid fa-check"></i>
+              24/7 Availability
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="contact-right">
+
+          <form class="contact-form">
+
+            <div class="form-row">
+
+              <input type="text" placeholder="Full Name">
+
+              <input type="email" placeholder="Email Address">
+
+            </div>
+
+            <div class="form-row">
+
+              <input type="text" placeholder="Phone Number">
+
+              <input type="text" placeholder="Subject">
+
+            </div>
+
+            <textarea placeholder="Write Your Message"></textarea>
+
+            <button type="submit">
+
+              Send Message
+
+            </button>
+
+          </form>
+
+        </div>
+
       </div>
+
     </div>
+
+  </section>
+  <!-- ================= OFFICE LOCATIONS ================= -->
+
+  <section class="office-locations">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <span>
+          Our Offices
+        </span>
+
+        <h2>
+          Visit Our Locations
+        </h2>
+
+      </div>
+
+      <div class="office-grid">
+
+        <div class="office-card">
+
+          <h3>
+            Ahmedabad Office
+          </h3>
+
+          <p>
+            SG Highway, Ahmedabad,
+            Gujarat, India
+          </p>
+
+        </div>
+
+        <div class="office-card">
+
+          <h3>
+            Mumbai Office
+          </h3>
+
+          <p>
+            Bandra Business District,
+            Mumbai, Maharashtra
+          </p>
+
+        </div>
+
+        <div class="office-card">
+
+          <h3>
+            Delhi Office
+          </h3>
+
+          <p>
+            Connaught Place,
+            New Delhi, India
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
   </section>
 
-  <footer class="footer-section text-white py-5">
+  <!-- ================= SUPPORT SERVICES ================= -->
+
+  <section class="support-services">
+
     <div class="container">
-      <p class="text-center mb-0 text-white-50">© 2026 TravelVista. All rights reserved.</p>
+
+      <div class="section-title">
+
+        <span>
+          Support
+        </span>
+
+        <h2>
+          How Can We Help?
+        </h2>
+
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card">
+
+          <i class="fa-solid fa-ticket"></i>
+
+          <h3>
+            Booking Support
+          </h3>
+
+          <p>
+            Assistance with reservations and ticket modifications.
+          </p>
+
+        </div>
+
+        <div class="service-card">
+
+          <i class="fa-solid fa-train"></i>
+
+          <h3>
+            Travel Assistance
+          </h3>
+
+          <p>
+            Guidance regarding destinations and routes.
+          </p>
+
+        </div>
+
+        <div class="service-card">
+
+          <i class="fa-solid fa-wallet"></i>
+
+          <h3>
+            Payment Help
+          </h3>
+
+          <p>
+            Secure payment and refund related assistance.
+          </p>
+
+        </div>
+
+        <div class="service-card">
+
+          <i class="fa-solid fa-headset"></i>
+
+          <h3>
+            Customer Care
+          </h3>
+
+          <p>
+            Dedicated support team available 24/7.
+          </p>
+
+        </div>
+
+      </div>
+
     </div>
+
+  </section>
+
+  <!-- ================= WHY CONTACT US ================= -->
+
+  <section class="why-contact">
+
+    <div class="container">
+
+      <div class="why-contact-grid">
+
+        <div class="why-contact-image">
+
+          <img src="images/train2.jpg" alt="Support Team">
+
+        </div>
+
+        <div class="why-contact-content">
+
+          <span>
+            Why Contact Us?
+          </span>
+
+          <h2>
+            We're Always Ready To Help
+          </h2>
+
+          <p>
+            Whether you need help selecting a destination,
+            choosing a package or managing your booking,
+            our experts are here to assist.
+          </p>
+
+          <ul>
+
+            <li>
+              <i class="fa-solid fa-check"></i>
+              Fast Response
+            </li>
+
+            <li>
+              <i class="fa-solid fa-check"></i>
+              Professional Team
+            </li>
+
+            <li>
+              <i class="fa-solid fa-check"></i>
+              Travel Experts
+            </li>
+
+            <li>
+              <i class="fa-solid fa-check"></i>
+              24/7 Availability
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= GOOGLE MAP ================= -->
+
+  <section class="map-section">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <span>
+          Find Us
+        </span>
+
+        <h2>
+          Our Location
+        </h2>
+
+      </div>
+
+      <div class="map-container">
+
+        <iframe src="https://www.google.com/maps/embed?pb=" allowfullscreen="" loading="lazy">
+        </iframe>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= FAQ ================= -->
+
+  <section class="faq-section">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <span>
+          FAQ
+        </span>
+
+        <h2>
+          Frequently Asked Questions
+        </h2>
+
+      </div>
+
+      <div class="faq-container">
+
+        <div class="faq-item">
+
+          <h3>
+            How quickly will I receive a response?
+          </h3>
+
+          <p>
+            Most inquiries are answered within 24 hours.
+          </p>
+
+        </div>
+
+        <div class="faq-item">
+
+          <h3>
+            Can I change my booking after confirmation?
+          </h3>
+
+          <p>
+            Yes, modifications are possible depending on availability.
+          </p>
+
+        </div>
+
+        <div class="faq-item">
+
+          <h3>
+            Do you offer corporate bookings?
+          </h3>
+
+          <p>
+            Yes, we provide special corporate and group travel plans.
+          </p>
+
+        </div>
+
+        <div class="faq-item">
+
+          <h3>
+            Is customer support available on weekends?
+          </h3>
+
+          <p>
+            Yes, our support team is available 24/7.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+  <!-- ================= TESTIMONIALS ================= -->
+
+  <section class="testimonials-section">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <span>
+          Reviews
+        </span>
+
+        <h2>
+          What Our Customers Say
+        </h2>
+
+      </div>
+
+      <div class="testimonial-grid">
+
+        <div class="testimonial-card">
+
+          <i class="fa-solid fa-quote-left"></i>
+
+          <p>
+            Excellent support and smooth booking process.
+            Highly recommended.
+          </p>
+
+          <h4>
+            Rahul Patel
+          </h4>
+
+        </div>
+
+        <div class="testimonial-card">
+
+          <i class="fa-solid fa-quote-left"></i>
+
+          <p>
+            Great travel packages and very professional staff.
+          </p>
+
+          <h4>
+            Priya Shah
+          </h4>
+
+        </div>
+
+        <div class="testimonial-card">
+
+          <i class="fa-solid fa-quote-left"></i>
+
+          <p>
+            Luxury experience with outstanding customer service.
+          </p>
+
+          <h4>
+            Amit Verma
+          </h4>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= NEWSLETTER ================= -->
+
+  <section class="newsletter-section">
+
+    <div class="container">
+
+      <div class="newsletter-content">
+
+        <span>
+          Stay Connected
+        </span>
+
+        <h2>
+          Subscribe To Our Newsletter
+        </h2>
+
+        <p>
+          Receive exclusive offers, travel updates and destination news.
+        </p>
+
+        <form class="newsletter-form">
+
+          <input type="email" placeholder="Enter Your Email">
+
+          <button type="submit">
+
+            Subscribe
+
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= CTA ================= -->
+
+  <section class="contact-cta">
+
+    <div class="container">
+
+      <div class="cta-content">
+
+        <span>
+          Need Assistance?
+        </span>
+
+        <h2>
+          Let's Plan Your Next Journey Together
+        </h2>
+
+        <p>
+          Contact our experts today and get personalized travel guidance.
+        </p>
+
+        <div class="cta-buttons">
+
+          <a href="packages.html" class="primary-btn">
+
+            View Packages
+
+          </a>
+
+          <a href="destinations.html" class="secondary-btn">
+
+            Explore Destinations
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="footer">
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-column">
+
+          <h3>
+            TrainGo
+          </h3>
+
+          <p>
+            Premium train travel experiences designed
+            for comfort, luxury and unforgettable memories.
+          </p>
+
+          <div class="social-links">
+
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            <a href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="footer-column">
+
+          <h3>
+            Quick Links
+          </h3>
+
+          <ul>
+
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="about.html">About</a>
+            </li>
+
+            <li>
+              <a href="destinations.html">Destinations</a>
+            </li>
+
+            <li>
+              <a href="packages.html">Packages</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-column">
+
+          <h3>
+            Services
+          </h3>
+
+          <ul>
+
+            <li>
+              <a href="#">Luxury Travel</a>
+            </li>
+
+            <li>
+              <a href="#">VIP Packages</a>
+            </li>
+
+            <li>
+              <a href="#">Group Tours</a>
+            </li>
+
+            <li>
+              <a href="#">Corporate Travel</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-column">
+
+          <h3>
+            Contact
+          </h3>
+
+          <ul>
+
+            <li>
+              Ahmedabad, Gujarat
+            </li>
+
+            <li>
+              +91 9876543210
+            </li>
+
+            <li>
+              info@traingo.com
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p>
+          © 2025 TrainGo. All Rights Reserved.
+        </p>
+
+      </div>
+
+    </div>
+
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/main.js"></script>
+   <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/animations.js"></script>
+
 </body>
+
 </html>
